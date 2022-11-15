@@ -1,0 +1,60 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://fonts.googleapis.com/css?family=Oswald:300,400,400i,700' rel='stylesheet')
+  link(rel='stylesheet' href='css/style.css')
+  link(rel='shortcut icon' type='image/png' href='img/favicon.png')
+  title  New Loans | The Latest Loans
+header.header
+  nav.nav.nav--courses
+    a.nav__el(href='/courses.html') All loans
+    form.nav__search
+      button.nav__search-btn
+      input.nav__search-input(type='text' placeholder='Search courses')
+  .header__logo
+    img(src='img/logo.png' alt='Loan logo')
+  nav.nav.nav--user
+    a.nav__el(href='#') My Loans
+    button.nav__el Log out
+    a.nav__el(href='#')
+      img.nav__user-img(src='img/users/user.png' alt='User photo')
+      span
+        | Loans
+section.section-header
+  .heading-box
+    h1.heading-primary
+      span
+        | New Loans
+        br
+        |             Current Loan
+.description-box
+  h2.heading-secondary.ma-bt-lg About the trending Loan
+  p.description__text
+    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    | minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    | aliquip ex ea commodo consequat. Duis aute irure dolor in
+    | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    | pariatur.
+  p.description__text
+    | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    | dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    | proident, sunt in culpa qui officia deserunt mollit anim id est
+    | laborum!
+.footer
+  .footer__logo
+    img(src='img/logo.png' alt='Loan logo')
+  ul.footer__nav
+    li
+      a(href='#') About us
+    li
+      a(href='#') Download Loan information
+    li
+      a(href='#') Apply For New Loan
+    li
+      a(href='#') Careers
+    li
+      a(href='#') Contact
+  p.footer__copyright
+    | &copy; by Student Learners.
