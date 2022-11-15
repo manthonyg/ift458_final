@@ -1,20 +1,20 @@
 
 
-exports.getLandingPAge = async (req, res) => {
+exports.getLandingPage = async (req, res) => {
   res.status(200).render('overview', {
     title: `Over View`
   
   });
 };
 
-exports.getCourse = async (req, res) => {
-  res.status(200).render('Course', {
-    title: `Get Course`
+exports.getLoan = async (req, res) => {
+  res.status(200).render('Loan', {
+    title: `Get Loan`
   });
 };
-exports.createNewCourse = async (req, res) => {
-  res.status(200).render('newCourse', {
-    title: `Create New Course`
+exports.createNewLoan = async (req, res) => {
+  res.status(200).render('newLoan', {
+    title: `Create New Loan`
   });
 };
 
