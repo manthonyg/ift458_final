@@ -4,9 +4,9 @@ const viewsController = require('../controllers/viewsController');
 const router = express.Router();
 
 router.get('/', viewsController.getLandingPAge);
-router.get('/Course', viewsController.getCourse);
+router.get('/loans', viewsController.getLoans);
 router.get('/login', viewsController.getLoginForm);
-router.get('/signIn', viewsController.getSignInForm);
+router.get('/signin', viewsController.getSignInForm);
 
 
 module.exports = router;
