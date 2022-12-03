@@ -3,9 +3,9 @@ head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   link(href='https://fonts.googleapis.com/css?family=Oswald:300,400,400i,700' rel='stylesheet')
-  link(rel='stylesheet' href='css/style.css')
+  link(rel='stylesheet' href='/css/style.css')
   link(rel='shortcut icon' type='image/png' href='img/favicon.png')
-  title  New Loan | The Trending Loans
+  title  New Loan Information
 h3.heading-primary
   span List Of Loans
 div
@@ -13,38 +13,33 @@ div
     thead
       tr
         th(scope='col') #
-        th(scope='col') Loan Customer Name
-        th(scope='col') Loan Phone Number
-        th(scope='col') Loan Address
-        th(scope='col') Loan Start Date
-        th(scope='col') Loan Amount
-        th(scope='col') Interest
-        th(scope='col') Loan Term Years
+        //- th(scope='col') Loan Customer Name
+        //- th(scope='col') Loan Phone Number
+        //- th(scope='col') Loan Address
+        th(scope='col') Loan Name 
+        th(scope='col') Loan Description
+        th(scope='col') Loan Term (in years)
+        th(scope='col') Loan Interest Rate
+        th(scope='col') Loan Monthly Payment
         th(scope='col') Loan Type
-        th(scope='col') Payment
-        th(scope='col') Description
+        th(scope='col') Loan Amount
+        th(scope='col') Loan PV
+        th(scope='col') Created Date
     tbody
       tr.table-secondary
-        th(scope='row') 1
-        td Mark
-        td 203-8034-2832
-        td 72 Acorn St
-        td 11/07/2011
-        td 20000
-        td 0.4
-        td 15
-        td EOM
-        td 1100
-        td Mortgage
-      tr
-        th(scope='row') 2
-        td Tim
-        td 702-402-3829
-        td 11 Hater Bouelvard
-        td 04/04/2019
-        td 10500
-        td 2.3
-        td 23
-        td BOM
-        td 200
-        td Car Payment
+       each loan, index in loans.loans
+
+              tr
+                th(scope='row') #{index}
+                //- td #{loan.customerName}
+                //- td #{loan.phoneNumber}
+                //- td #{loan.address}
+                td #{loan.loanName || 'N/A'}
+                td #{loan.loanDescription}
+                td #{loan.loanTermYears || 'N/A'}
+                td #{loan.loanInterestRate || 'N/A'}
+                td #{loan.loanMonthlyPayment || 'N/A'}
+                td #{loan.loanType || 'N/A'}
+                td #{loan.loanAmount || 'N/A'}
+                td #{loan.loanPV || 'N/A'}
+                td #{loan.createdDate || 'N/A'}

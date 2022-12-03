@@ -1,0 +1,67 @@
+  [
+    {
+  "id": 0,
+  "customerName": "Michael",
+  "phoneNumber": "2038052062",
+  "address": "412 Clark St",
+  "loanStartDate": "03/26/1990",
+  "loanAmount": 2000,
+  "interest": 6,
+  "loanTermYears": 5,
+  "payment": 200,
+  "loanType": "BOM",
+  "description": "Personal loan for a motorcycle"
+},
+{
+  "id": 1,
+  "customerName": "Nicholas",
+  "phoneNumber": "2038052061",
+  "address": "200 Tunbuckle St",
+  "loanStartDate": "03/26/1990",
+  "loanAmount": 2500,
+  "interest": 3,
+  "loanTermYears": 2,
+  "loanType": "EOM",
+  "payment": 200,
+  "description": "Personal loan for a greenhouse"
+},
+{
+  "id": 2,
+  "customerName": "Thomas",
+  "phoneNumber": "5049389283",
+  "address": "400 Wish Ln",
+  "loanStartDate": "03/26/1990",
+  "loanAmount": 10000,
+  "interest": 10,
+  "loanTermYears": 7,
+  "loanType": "BOM",
+  "payment": 200,
+  "description": "Auto loan"
+},
+{
+  "id": 3,
+  "customerName": "Frank",
+  "phoneNumber": "2078352062",
+  "address": "999 Greenhill Ter",
+  "loanStartDate": "03/26/1990",
+  "loanAmount": 10000,
+  "interest": 0.05,
+  "loanTermYears": 4,
+  "loanType": "BOM",
+  "payment": 230.29,
+  "description": "Home loan for first home purchase"
+},
+{
+  "id": 4,
+  "customerName": "Mark",
+  "phoneNumber": "5012167832",
+  "address": "41232 S. Broad Street",
+  "loanStartDate": "03/26/1990",
+  "loanAmount": 1000,
+  "interest": 3,
+  "loanTermYears": 1,
+  "loanType": "EOM",
+  "payment": 200,
+  "description": "Personal loan for a new bathtub"
+}
+  ]
